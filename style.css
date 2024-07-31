@@ -15,12 +15,14 @@ body {
 
 nav{
     direction: rtl;
-    background-color: #04012c9d;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 25px;
+    box-shadow: 2px 5px 8px 10px rgba(0, 0, 0, 0.199);
 }
 
 .navbar-brand a{
@@ -74,7 +76,6 @@ nav ul li a:hover{
     height: 250px;
     font-size: 35px;
     padding: 20px;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -131,8 +132,58 @@ button:hover{
     margin-top: 35%;
 }
 
+.burger{
+    display: none;
+}
+
+/* Sidebar */
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.623);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(30px);
+    padding-top: 10px;
+}
+
+.sidebar li{
+    width: 100%;
+    background-color: #171bf1;
+}
+
+.sidebar a{
+    width: 100%;
+    color: white;
+}
+
 @media (max-width:890px){
-    nav ul li{
+    nav .list-links{
         display: none;
+    }
+
+    .main-content{
+        margin-top: 100px;
+        width: 380px;
+        z-index: -1;
+    }
+
+    .navbar-brand{
+        margin-left: 100px;
+        width: 100%;
+    }
+
+    .burger{
+        display: block;
+        margin-left: 20px;
+        font-size: 25px;
     }
 }

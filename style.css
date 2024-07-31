@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Readex Pro', sans-serif;
+    color: white;
+    font-weight: 600;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #0c0c2c;
+}
+
+nav{
+    direction: rtl;
+    background-color: #04012c9d;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+}
+
+.navbar-brand a{
+    color: #221edb;
+    transition: 0.4s;
+}
+
+.navbar-brand a:hover{
+    color: #171bf1;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+nav ul li{
+    margin-left: 20px;
+    border: hsl(240, 77%, 34%) solid 1px;
+    border-style: solid 2px #123;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+nav ul li:hover{
+    background-color: #1311a877;
+}
+
+nav ul li a{
+    color: rgb(32, 43, 202);
+    transition: 0.4s;
+}
+
+nav ul li a:hover{
+    color:rgb(32, 65, 252);
+}
+
+
+.main-container{
+    display: flex;
+    justify-content: center;
+}
+
+.main-container .main-content{
+    width: 580px;
+    background-color: rgb(8, 36, 116);
+    border-radius: 15px;
+    height: 250px;
+    font-size: 35px;
+    padding: 20px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    backdrop-filter: blur(30px);
+}
+
+
+.main-content input{
+    font-size: 18px;
+    padding: 6px;
+    /* margin-left: 20px; */
+    border-radius: 50px;
+    border: 2px solid #0e0e47;
+    color: #2d2d2d;
+    text-align: center;
+}
+
+.main-content input::placeholder{
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.main-content input:focus{
+    outline: none;
+    border: #221edb solid 1px;
+}
+
+
+
+button{
+    border: #0c0c2c solid 2px;
+    color: #0c0c2c;
+    background-color: transparent;
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover{
+    background-color: #0c0c2c;
+    color: white;
+}
+
+
+.card{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 35%;
+}

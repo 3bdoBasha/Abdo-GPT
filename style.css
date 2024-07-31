@@ -130,3 +130,9 @@ button:hover{
     text-align: center;
     margin-top: 35%;
 }
+
+@media (max-width:890px){
+    nav ul li{
+        display: none;
+    }
+}

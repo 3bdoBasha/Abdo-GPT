@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
@@ -34,13 +34,15 @@
     </nav>
     <br>
     <div class="main-container">
-        <div class="main-content" style="text-align: center;">
-                <input type="text" placeholder="ماذا تريد من الذكاء الإصطناعي"><br>
-                <button type="submit">إرسال البيانات</button><br>
-        </div>
-        <div class="main-content">
-            <h5 align="center">إشتـرك الأن وكن من أوائـل الذين يحظـون بتجربـة سيئـة مميتة 💀 </h5>
-            <button></button>
+        <div class="content">
+            <div class="card" style="text-align: center;" id="cardI">
+                <input type="text" placeholder="ماذا تريد من الذكاء الإصطناعي">
+                <button type="submit">إرسال البيانات</button>
+            </div>
+            <div class="card" style="text-align: center;">
+                <h5>✨ بادر بالإشتراك مع عبدالرحمن جي بـي تـي لتحصـل على 0 شـيء </h5>
+                <button onclick=showNotification()>إشتـرك الأن</button>
+            </div>
         </div>
     </div>
     <script>
@@ -54,5 +56,6 @@
             sidebar.style.display = 'none';
         }
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
